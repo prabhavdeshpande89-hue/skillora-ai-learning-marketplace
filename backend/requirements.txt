@@ -9,3 +9,4 @@ pytest
 email-validator
 PyJWT
 pwdlib[argon2]
+google-genai
