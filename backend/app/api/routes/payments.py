@@ -235,8 +235,8 @@ async def create_order(
                     "brand_name": "Skillora AI",
                     "shipping_preference": "NO_SHIPPING",
                     "user_action": "PAY_NOW",
-                    "return_url": "http://localhost:5173/payment-success",
-                    "cancel_url": "http://localhost:5173/payment-cancel",
+                    "return_url": f"{os.getenv('FRONTEND_URL', 'http://localhost:5173')}/payment-success",
+                    "cancel_url": f"{os.getenv('FRONTEND_URL', 'http://localhost:5173')}/payment-cancel",
                 }
             }
         },
