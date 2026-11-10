@@ -28,13 +28,12 @@ app = FastAPI(
     version="1.0.0",
 )
 
-
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://skillora-ai-ten.vercel.app/",
+        "https://skillora-ai-ten.vercel.app",
         "https://skillora-nvtyu2ye1-prabhav-deshpandes-projects-32c6660a.vercel.app",
     ],
     allow_credentials=True,
